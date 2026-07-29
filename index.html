@@ -2,39 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Я продуктовый дизайнер. Работаю на стыке продуктовой стратегии, UX и пользы для бизнеса. Всегда рад обсудить дизайн, сложные системы и создание крутых решений для реальных задач." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      id="meta-description"
+      name="description"
+      content="Я продуктовый дизайнер из Санкт-Петербурга. Помогаю B2B, B2C и SaaS компаниям находить баланс между пользовательским опытом, продуктовой стратегией и бизнес-результатами."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:title" content="Александр Жуков | Портфолио" />
-    <meta property="og:description" content="Я продуктовый дизайнер. Работаю на стыке продуктовой стратегии, UX и пользы для бизнеса. Всегда рад обсудить дизайн, сложные системы и создание крутых решений для реальных задач." />
-    <meta property="og:image" content="/seo/image-ru.png" />
+    <meta id="og-locale" property="og:locale" content="ru_RU" />
+    <meta
+      id="og-title"
+      property="og:title"
+      content="Александр Жуков | Портфолио"
+    />
+    <meta
+      id="og-description"
+      property="og:description"
+      content="Я продуктовый дизайнер из Санкт-Петербурга. Помогаю B2B, B2C и SaaS компаниям находить баланс между пользовательским опытом, продуктовой стратегией и бизнес-результатами."
+    />
+    <meta id="og-image" property="og:image" content="/index/preview-ru.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      id="twitter-title"
+      name="twitter:title"
+      content="Александр Жуков | Портфолио"
+    />
+    <meta
+      id="twitter-description"
+      name="twitter:description"
+      content="Я продуктовый дизайнер из Санкт-Петербурга. Помогаю B2B, B2C и SaaS компаниям находить баланс между пользовательским опытом, продуктовой стратегией и бизнес-результатами."
+    />
+    <meta
+      id="twitter-image"
+      name="twitter:image"
+      content="/index/preview-ru.png"
+    />
+    <link rel="icon" href="/index/favicon-lite.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/index/favicon-lite.svg"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="/index/favicon-dark.svg"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: dark)"
+    />
     <title>Александр Жуков | Портфолио</title>
-    <link rel="icon" href="/seo/favicon-light.svg" type="image/svg+xml" />
-    <link rel="icon" href="/seo/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
-    <link rel="icon" href="/seo/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script>
+      if (location.pathname === "/en" || location.pathname.startsWith("/en/")) {
+        const title = "Aleksandr Zhukov | Portfolio";
+        const description = "Hi there! I'm a Product Designer based in St. Petersburg. I help B2B, B2C, and SaaS companies bridge the gap between user experience, product strategy,  and business outcomes.";
+        const image = "/index/preview-en.png";
 
-    <!-- Preload local fonts and critical index-page assets to prevent UI jumping during first animation -->
-    <link rel="preload" href="/fonts/Bounded-Variable.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/Molot.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelDisplay-Light.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelDisplay-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelDisplay20240404-RegularItalic.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelDisplay-Medium.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelDisplay-SemiBold.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelText-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelText20240404-RegularItalic.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/FixelText-Medium.otf" as="font" type="font/otf" crossorigin="anonymous">
-    <link rel="preload" href="/my-animoji.png" as="image" type="image/png">
-    <link rel="preload" href="/bg-pattern.svg" as="image" type="image/svg+xml">
-    <link rel="preload" href="/mobile/bg-pattern.svg" as="image" type="image/svg+xml">
-
+        document.documentElement.lang = "en";
+        document.title = title;
+        document.querySelector("#meta-description").content = description;
+        document.querySelector("#og-locale").content = "en_US";
+        document.querySelector("#og-title").content = title;
+        document.querySelector("#og-description").content = description;
+        document.querySelector("#og-image").content = image;
+        document.querySelector("#twitter-title").content = title;
+        document.querySelector("#twitter-description").content = description;
+        document.querySelector("#twitter-image").content = image;
+      }
+    </script>
     <script type="text/javascript">
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){m[i].a = m[i].a || []; m[i].a.push(arguments)};
       m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      var j;
+      for (j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k = e.createElement(t);
+      a = e.getElementsByTagName(t)[0];
+      k.async = 1;
+      k.src = r;
+      a.parentNode.insertBefore(k, a)})
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=110116885", "ym");
 
       ym(110116885, "init", {
@@ -44,9 +88,8 @@
         webvisor: true
       });
     </script>
-  
-    <script type="module" crossorigin src="/assets/index-Dzf3KUHT.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B40tJUGC.css">
+    <script type="module" crossorigin src="/assets/index-BNi-EdRH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cc0NWnMS.css">
   </head>
   <body>
     <noscript><div><img src="https://mc.yandex.ru/watch/110116885" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
